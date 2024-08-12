@@ -1,15 +1,12 @@
-import { useState } from "react";
+import Button from "./components/Button";
+import Header from "./components/Header";
 
 function App() {
-  const [clicked, setClicked] = useState<boolean>(false);
-
   return (
     <>
-      <h1 className="title">Hello world</h1>
+      <Header title="This is the header" />
 
-      <button onClick={() => setClicked(!clicked)}>Click me!</button>
-
-      {clicked && <>{Date.now()}</>}
+      <Button>This is a button</Button>
     </>
   );
 }
