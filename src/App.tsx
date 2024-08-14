@@ -1,5 +1,6 @@
 import Button from "./components/Button";
 import Header from "./components/Header";
+import MyImage from "./assets/img.png";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Header />
 
       <Button>This is a button</Button>
+
+      <img src={MyImage} loading="lazy" alt="My Image" />
     </>
   );
 }
