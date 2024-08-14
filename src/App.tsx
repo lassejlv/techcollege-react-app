@@ -10,6 +10,8 @@ function App() {
 
       <Header title="This is the header but third time" />
 
+      <Header />
+
       <Button>This is a button</Button>
     </>
   );
