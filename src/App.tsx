@@ -1,7 +1,7 @@
 import { Button } from './components/Button';
 import Header from './components/Header';
 import MyImage from './assets/img.webp';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -9,9 +9,20 @@ function App() {
   const [message, setMessage] = useState('Hello World!');
   const [editMode, setEditMode] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    setInterval(() => {
+      setCounter(counter + 2);
+    }, 1000);
+  }, [counter]);
 
   return (
     <>
+      <div className="my-4">
+        {counter}
+        <p>Opdater vært sekund. Denne function bruger useEffect & useState</p>
+      </div>
       <Header title="This is the header" />
 
       <Header title="This is the but second time" />
