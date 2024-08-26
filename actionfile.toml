@@ -1,0 +1,2 @@
+[example]
+cmd = "echo $MESSAGE"

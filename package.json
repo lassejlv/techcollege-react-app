@@ -14,7 +14,8 @@
     "eslint-plugin-react-compiler": "^0.0.0-experimental-c7434b2-20240809",
     "react": "^19.0.0-beta-26f2496093-20240514",
     "react-dom": "^19.0.0-beta-26f2496093-20240514",
-    "sass": "^1.77.8"
+    "sass": "^1.77.8",
+    "styled-components": "^6.1.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
